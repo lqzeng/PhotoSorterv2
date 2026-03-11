@@ -1,6 +1,7 @@
 use walkdir::WalkDir;
 use std::path::PathBuf;
 
+#[allow(dead_code)] // allow non use of fields for now
 pub struct ScanResult {
     pub images: Vec<PathBuf>,
     pub folder_count: usize,
